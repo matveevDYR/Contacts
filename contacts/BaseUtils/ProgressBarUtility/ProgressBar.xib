@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ProgressBar" id="WUs-ku-1Lz" customClass="ProgressBarView" customModule="contacts">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ku-Sd-hxS" userLabel="BackgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7v-2X-pPh" customClass="UIViewAttExtension" customModule="contacts">
+                    <rect key="frame" x="123" y="418" width="168" height="70.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDS-lR-zHx">
+                            <rect key="frame" x="25" y="20" width="118" height="30.5"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Lai-Fe-cYX">
+                                    <rect key="frame" x="0.0" y="5" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="cnm-Kk-k46"/>
+                                    </constraints>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKG-uW-70F">
+                                    <rect key="frame" x="30" y="5" width="88" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="sKG-uW-70F" secondAttribute="trailing" id="2ul-JP-Wm4"/>
+                                <constraint firstItem="sKG-uW-70F" firstAttribute="top" secondItem="oDS-lR-zHx" secondAttribute="top" constant="5" id="5JT-yf-HQp"/>
+                                <constraint firstItem="sKG-uW-70F" firstAttribute="leading" secondItem="Lai-Fe-cYX" secondAttribute="trailing" constant="10" id="6uO-LQ-TDs"/>
+                                <constraint firstItem="Lai-Fe-cYX" firstAttribute="centerY" secondItem="oDS-lR-zHx" secondAttribute="centerY" id="Llh-uy-m55"/>
+                                <constraint firstItem="Lai-Fe-cYX" firstAttribute="leading" secondItem="oDS-lR-zHx" secondAttribute="leading" id="O6s-EY-4np"/>
+                                <constraint firstItem="sKG-uW-70F" firstAttribute="centerY" secondItem="oDS-lR-zHx" secondAttribute="centerY" id="qPy-Si-KGd"/>
+                                <constraint firstAttribute="bottom" secondItem="sKG-uW-70F" secondAttribute="bottom" constant="5" id="wZ0-FL-nwF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="oDS-lR-zHx" secondAttribute="bottom" constant="20" id="4Oi-9x-3d8"/>
+                        <constraint firstItem="oDS-lR-zHx" firstAttribute="top" secondItem="f7v-2X-pPh" secondAttribute="top" constant="20" id="AGe-zU-Geo"/>
+                        <constraint firstItem="oDS-lR-zHx" firstAttribute="centerX" secondItem="f7v-2X-pPh" secondAttribute="centerX" id="JcY-9K-2nv"/>
+                        <constraint firstItem="oDS-lR-zHx" firstAttribute="leading" secondItem="f7v-2X-pPh" secondAttribute="leading" constant="25" id="YdB-ht-Au1"/>
+                        <constraint firstItem="oDS-lR-zHx" firstAttribute="centerY" secondItem="f7v-2X-pPh" secondAttribute="centerY" id="ji1-A5-QDd"/>
+                        <constraint firstAttribute="trailing" secondItem="oDS-lR-zHx" secondAttribute="trailing" constant="25" id="nAd-fE-UUQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rcY-JE-dmb"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="f7v-2X-pPh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rcY-JE-dmb" secondAttribute="leading" constant="20" id="3aj-CJ-kMk"/>
+                <constraint firstItem="f7v-2X-pPh" firstAttribute="centerY" secondItem="rcY-JE-dmb" secondAttribute="centerY" id="9fK-6c-oU9"/>
+                <constraint firstAttribute="bottom" secondItem="3ku-Sd-hxS" secondAttribute="bottom" id="Bxr-eU-pNF"/>
+                <constraint firstItem="f7v-2X-pPh" firstAttribute="centerX" secondItem="rcY-JE-dmb" secondAttribute="centerX" id="UBw-sI-77W"/>
+                <constraint firstItem="rcY-JE-dmb" firstAttribute="trailing" secondItem="3ku-Sd-hxS" secondAttribute="trailing" id="bi7-TK-fj0"/>
+                <constraint firstItem="rcY-JE-dmb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="f7v-2X-pPh" secondAttribute="trailing" constant="20" id="ohI-eX-m2c"/>
+                <constraint firstItem="3ku-Sd-hxS" firstAttribute="leading" secondItem="rcY-JE-dmb" secondAttribute="leading" id="xKQ-7C-3dI"/>
+                <constraint firstItem="3ku-Sd-hxS" firstAttribute="top" secondItem="WUs-ku-1Lz" secondAttribute="top" id="zds-yB-zPZ"/>
+            </constraints>
+            <connections>
+                <outlet property="indicatorActivity" destination="Lai-Fe-cYX" id="UOF-Hh-A6e"/>
+                <outlet property="messageLabel" destination="sKG-uW-70F" id="FpZ-ct-C6U"/>
+                <outlet property="view" destination="f7v-2X-pPh" id="Sxh-p3-S6z"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="109"/>
+        </view>
+    </objects>
+</document>

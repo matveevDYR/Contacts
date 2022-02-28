@@ -1,0 +1,22 @@
+PODS:
+  - EasyDi (1.6.1)
+  - GRDB.swift (5.17.0):
+    - GRDB.swift/standard (= 5.17.0)
+  - GRDB.swift/standard (5.17.0)
+
+DEPENDENCIES:
+  - EasyDi
+  - GRDB.swift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - EasyDi
+    - GRDB.swift
+
+SPEC CHECKSUMS:
+  EasyDi: 3d7d4c0d3ad2d78b3ff22d4755590d32945f69cc
+  GRDB.swift: 1c8a479b2723beab39ed8609fe25513483a0f282
+
+PODFILE CHECKSUM: b385d0343eb765f497d95e964af3e64ebe0feb73
+
+COCOAPODS: 1.11.2
